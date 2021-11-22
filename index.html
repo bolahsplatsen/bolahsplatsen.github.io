@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bolagsplatsen.se</title>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="main-wrapper">
+            <div class="header">
+                <div class="container mx-auto">
+                    <div class="relative bg-white">
+                        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                            <div>
+                                <a href="#" class="flex logo">
+                                    <span class="sr-only">Workflow</span>
+                                    <img class="h-8 w-auto sm:h-10" src="./images/logo.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="-mr-2 -my-2 md:hidden">
+                                <button
+                                    type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                    aria-expanded="false"
+                                >
+                                    <span class="sr-only">Open menu</span>
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
+                                <nav class="flex space-x-10">
+                                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                                        KUNDTJÄNST
+                                    </a>
+
+                                    <div class="relative">
+                                        <button
+                                            type="button"
+                                            class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none"
+                                            aria-expanded="false"
+                                        >
+                                            <span>RÅDGIVARE </span>
+                                            <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                                        ARTIKLAR
+                                    </a>
+
+                                    <div class="sub-logo">
+                                        <img src="./images/sub-logo.svg" alt="" />
+                                    </div>
+                                </nav>
+                                <div class="flex items-center md:ml-12">
+                                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                                        MIN SIDA
+                                    </a>
+                                    <a href="#" class="btn-dark ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                                        LÄGG IN ANNONS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter">
+                <div class="container mx-auto">
+                    <div class="flex justify-between flex-wrap">
+                        <div class="form-group">
+                            <select id="location" name="location" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none  sm:text-sm rounded-md">
+                                <option selected>Alla kategorier</option>
+                                <option>Alla kategorier</option>
+                                <option>Alla kategorier</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <!-- Heroicon name: solid/mail -->
+                                    <img src="./images/search.svg" alt="" />
+                                </div>
+                                <input type="email" name="email" id="email" class=" block w-full pl-10 py-2 sm:text-sm border-gray-300 rounded-md focus:outline-none" placeholder="Sök område, stad, län..." />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="mt-1 relative rounded-md shadow-sm">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <!-- Heroicon name: solid/mail -->
+                                    <img src="./images/filter.svg" alt="" />
+                                </div>
+                                <input type="email" name="email" id="email1" class=" pointer-events-none  block w-full pl-10 py-2 sm:text-sm border-gray-300 rounded-md" placeholder="Fler sökfilter" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="location" name="location" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none  sm:text-sm rounded-md">
+                                <option selected>Namn A-Z</option>
+                                <option>Namn A-Z</option>
+                                <option>Namn A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container mx-auto">
+                <div class="hamburger">
+                    <ul class="flex">
+                        <li>Företag till salu</li>
+                        <li>
+                            Food & Drinks
+                        </li>
+                        <li>Café</li>
+                    </ul>
+                </div>
+
+                <div class="search-result flex justify-between">
+                    <div class="search-label">
+                        Restauranger till salu i Stockholm
+                    </div>
+                    <div class="search-list">
+                        <span>Visar 1-20 av 628 </span>
+                        <button
+                            type="button"
+                            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >
+                            Bevaka sökningen
+                        </button>
+                    </div>
+                </div>
+
+                <div class="listing-container">
+
+                    <div class="list-items flex flex-wrap">
+                        <div class="list-cover">
+                            <img src="./images/item1.jpg" alt="" />
+                            <div class="favorite"><a><img src="./images/heart.svg" /></a></div>
+                        </div>
+
+                        <div class="list-content">
+                            <div class="list-logo">
+                                <img src="./images/list-logo.svg" alt="" />
+                            </div>
+
+                            <div class="badges">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    RESTAURANG
+                                </span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    MAT & DRYCK
+                                </span>
+                            </div>
+                            <h3>Restaurang mitt i Lund / 2276</h3>
+                            <div class="location">
+                                <span  class="flex"><img src="./images/location.svg" alt="" /> Lund - Skåne</span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    SFR-mäklare
+                                </span>
+                            </div>
+                            <p>Mitt I Lund, vid Bantorget, ligger en institution bland Lunds restauranger. Den har funnits här i samma ägo sedan 1981 och är välkänd bland lundaborna. Restaurangen som säljs ligger...</p>
+
+                            <ul>
+                                <li><img src="./images/icon1.svg" alt="" /> Resultat<span>Vinst</span></li>
+                                <li><img src="./images/icon2.svg" alt="" /> Omsättning<span>6.2 Mkr</span></li>
+                                <li><img src="./images/icon3.svg" alt="" /> Begärt pris<span>1.9 Mkr</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="list-items flex flex-wrap">
+                        <div class="list-cover">
+                            <img src="./images/item2.jpg" alt="" />
+                            <div class="favorite"><a><img src="./images/heart.svg" /></a></div>
+                        </div>
+
+                        <div class="list-content">
+                            <div class="list-logo">
+                                <img src="./images/list-logo.svg" alt="" />
+                            </div>
+
+                            <div class="badges">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    RESTAURANG
+                                </span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    MAT & DRYCK
+                                </span>
+                            </div>
+                            <h3>Hårsalong på Limhamn / 1094</h3>
+                            <div class="location">
+                                <span  class="flex"><img src="./images/location.svg" alt="" /> Malmö</span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    SFR-mäklare
+                                </span>
+                            </div>
+                            <p>På bästa läge, centralt på Limhamn, ligger sedan många år en mycket välbesökt och välkänd hårsalong.
+                                I kvarteren bor och arbetar många invånare och ett antal butiker finns här också. Det är lätt att hitta ...</p>
+
+                            <ul>
+                                <li><img src="./images/icon1.svg" alt="" /> Resultat<span>Förlust</span></li>
+                                <li><img src="./images/icon2.svg" alt="" /> Omsättning<span>1.4 Mkr</span></li>
+                                <li><img src="./images/icon3.svg" alt="" /> Begärt pris<span>1.1 Mkr</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="list-items flex flex-wrap">
+                        <div class="list-cover">
+                            <img src="./images/item3.jpg" alt="" />
+                            <div class="favorite"><a><img src="./images/heart.svg" /></a></div>
+                        </div>
+
+                        <div class="list-content">
+                            <div class="list-logo">
+                                <img src="./images/list-logo.svg" alt="" />
+                            </div>
+
+                            <div class="badges">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    RESTAURANG
+                                </span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    MAT & DRYCK
+                                </span>
+                            </div>
+                            <h3>Investerare sökes - VM Passivhus Miljöanpassade hus Skandinaviska marknaden</h3>
+                            <div class="location">
+                                <span  class="flex"><img src="./images/location.svg" alt="" /> Málaga, Spanien</span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    SFR-mäklare
+                                </span>
+                            </div>
+                            <p>På bästa läge, centralt på Limhamn, ligger sedan många år en mycket välbesökt och välkänd hårsalong.
+                                I ...</p>
+
+                            <ul>
+                                <li><img src="./images/icon1.svg" alt="" /> Resultat<span>Vinst</span></li>
+                                <li><img src="./images/icon2.svg" alt="" /> Omsättning<span>100 Mkr</span></li>
+                                <li><img src="./images/icon3.svg" alt="" /> Begärt pris<span>75 Mkr</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="list-items flex flex-wrap">
+                        <div class="list-cover">
+                            <img src="./images/item4.jpg" alt="" />
+                            <div class="favorite"><a><img src="./images/heart.svg" /></a></div>
+                        </div>
+
+                        <div class="list-content">
+                            <div class="list-logo">
+                                <img src="./images/list-logo.svg" alt="" />
+                            </div>
+
+                            <div class="badges">
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    RESTAURANG
+                                </span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    MAT & DRYCK
+                                </span>
+                            </div>
+                            <h3>
+                                Automatiserad E-handel i Lukrativ marknad 
+                                som växt 300% på 1 år</h3>
+                            <div class="location">
+                                <span  class="flex"><img src="./images/location.svg" alt="" /> Stockholm (Kommun)</span>
+                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">
+                                    SFR-mäklare
+                                </span>
+                            </div>
+                            <p>Hyra: 47 000 kr exkl. moms (inklusive el och vatten). Observera att hyresvärden kommer att flytta ...</p>
+
+                            <ul>
+                                <li><img src="./images/icon1.svg" alt="" /> Resultat<span>Vinst</span></li>
+                                <li><img src="./images/icon2.svg" alt="" /> Omsättning<span>3.2 Mkr</span></li>
+                                <li><img src="./images/icon3.svg" alt="" /> Begärt pris<span>1.6 Mkr</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                   
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
